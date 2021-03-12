@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Bad Script');
+body {
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    /*background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);*/
+}
+
+.section-content-block {
+    /* margin-top: auto;    */
+    margin-bottom: 5rem;
+}
+
+
+/*-----------------------carousels---------------------------*/
+
+.carousel-inner .carousel-item img {
+    height: 45em;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    font-family: 'Bad Script';
+    right: 15%;
+    bottom: 1.6em;
+    left: 15%;
+    z-index: 10;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    font-weight: 200;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.carousel-caption .blockquote p {
+    font-weight: 110;
+    font-size: 1.35em;
+    font-family: 'Bad Script';
+}
+
+.blockquote #quote {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Bad Script';
+}
+
+.carousel-caption .blockquote .blockquote-footer {
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 1em 0em 2em 5em;
+    font-style: italic;
+    color: #9b9486;
+}
+
+/*-------------------------description-----------------------------*/
+
+.section-content-block div #illustration img {
+  height: 500px;
+  width: 500px;
+}
+
+.section-content-block #descriptive .contents {
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .section-content-block #descriptive .contents {
+    text-align: center;
+  }
+}
+
+@media (max-width: 525px) {
+  .section-content-block #descriptive .contents h1{
+    font-size: 1.5rem;
+  }
+  .section-content-block #descriptive .contents h5{
+    font-size: 1rem;
+  }
+  .section-content-block #descriptive .contents div .btn{
+    font-size: 0.8rem;
+  }
+  .section-content-block div #illustration img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 325px) {
+  .section-content-block #descriptive .contents h1{
+    font-size: 1rem;
+  }
+  .section-content-block #descriptive .contents h5{
+    font-size: 0.8rem;
+  }
+  .section-content-block #descriptive .contents div .btn{
+    font-size: 0.8rem;
+  }
+}
+
+/*-------------------------testimonials-----------------------------*/
+
+.section-content-block #testimonials {
+    position: relative;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background: #33d1a0; */
+}
+
+.container .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: auto;
+    margin: 20px;
+    background: #121e27;
+    box-shadow: 5px 5px 10px 3px rgb(121, 119, 119);
+}
+
+.container .box .content {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.container .box .content .quote_pic {
+    max-width: 48px;
+    margin-top: 1rem;
+}
+
+.container .box .content p {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.container .box .content .user {
+    /* max-width: 6rem; */
+    border-radius: 50%;
+}
+
+.container .box .content h3 {
+    color: #33d1a0;
+    text-transform: uppercase;
+    font-family: "nunito", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 0rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+/*------here is code for responsive testimonials------*/
+
+@media (max-width: 992px) {
+    .container .box {
+        width: 75%;
+        height: auto;
+    }
+    .container .box .content {
+        padding: 4rem 3rem 2rem;
+    }
+    .container .box .content p {
+        font-size: 0.9rem;
+    }
+    .container .box .content .quote_pic {
+        max-width: 40px;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .box {
+        width: 100%;
+        height: auto;
+    }
+    .container .box .content {
+        padding: 2rem 1.5rem;
+    }
+    .container .box .content p {
+        font-size: 0.8rem;
+    }
+    .container .box .content .quote_pic {
+        max-width: 40px;
+        margin-top: 1rem;
+    }
+    .container .box .content .user {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+    .container .box .content h3 {
+        font-size: 0.78rem;
+    }
+}
+
+
+/*------------blockquote at the end of homepage-----------*/
+
+#quotation p {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Bad Script';
+}
+
+#quotation p span {
+    font-size: 2.3rem;
+}
+
+@media (max-width: 1000px) {
+    #quotation p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 830px) {
+    #quotation p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 628px) {
+    #quotation p {
+        font-size: 1.1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    #quotation p span {
+        font-size: 1.5rem;
+    }
+}
