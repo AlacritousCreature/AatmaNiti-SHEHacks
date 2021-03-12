@@ -3,8 +3,8 @@
 ## To install and view locally
 
 ```bash
-$ git clone https://github.com/AlacritousCreature/AatmaNiti-SHEHacks.git
-$ cd AatmaNiti-SHEHacks
+$ git clone https://github.com/AlacritousCreature/SHEHacks_Team-073.git
+$ cd SHEHacks_Team-073
 $ npm install
 $ node app.js
 ```
