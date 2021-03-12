@@ -1,0 +1,74 @@
+<%- include('./partials/header') %>
+    <style tyep="text/stylesheets">
+        body {
+            /*background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);*/
+            background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+        }
+    </style>
+
+    <h1 style="padding-top: 5rem;">Buy and Sell Products</h1>
+    <section class=" h-100">
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <% products.forEach(function(product){ %>
+                    <div class="col">
+                        <div class="card shadow h-100" style="border: none">
+                            <img src="<%= product.image %>" class="card-img-top" alt="Image Card laceholder">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title mb-3 text-danger">
+                                    <%= product.productname %>
+                                        </h5>
+                                        <h5 class="card-title mb-3 text-danger">
+                                            <%= product.producttype %>
+                                        </h5>
+                                        <p class="card-text flex-grow-1">
+                                            <ul>
+                                                <li>Producer:
+                                                    <%= product.producer %>
+                                                </li>
+                                                <li>Place of production:
+                                                    <%= product.city %>,
+                                                        <%= product.state %>
+                                                </li>
+                                                <li>Contact:
+                                                    <%= product.phone %>
+                                                </li>
+                                                <li>quantity:
+                                                    <%= product.quantity %>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="btn-group btn-group-sm">
+                                                        <div class="btn btn-danger">
+                                                            Details
+                                                        </div>
+                                                        <div class="btn active btn-danger">
+                                                            +
+                                                        </div>
+                                                        <div class="btn btn-danger">
+                                                            -
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col d-flex justify-content-end align-items-center">
+                                                    <small class="text-muted d-flex justify-content-end align-items-center">
+                                            <div class="btn-sm btn-danger">
+                                                ₹. <%= product.price %>
+                                            </div>
+                                        </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }); %>
+
+            </div>
+        </div>
+    </section>
+    <%- include('./partials/footer') %>

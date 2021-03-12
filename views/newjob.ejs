@@ -1,0 +1,53 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/registerStyle.css">
+    <div class="container" id="mainContainer">
+        <h1 class="well" id="formHead">Add New Job vacancy</h1>
+
+        <form action="/jobs" method="POST">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label>Position</label>
+                    <input type="text" name="position" placeholder="Enter the Position Name here.." class="form-control">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label>Organisation</label>
+                    <input type="text" name="organisation" placeholder="Enter the Organisation Name here.." class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Experience</label>
+                <input type="text" name="experience" placeholder="Enter the Experience required" rows="3" class="form-control">
+            </div>
+            <div class="row">
+                <div class="col-sm-4 form-group">
+                    <label>City</label>
+                    <input type="text" name="city" placeholder="City of office" class="form-control">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label>State</label>
+                    <input type="text" name="state" placeholder="State of office" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Where to apply?</label>
+                <input type="text" name="info" placeholder="It can be a emailID, website or any office" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Expected Qualification</label>
+                <input type="text" name="qualification" placeholder="" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Start Date to Apply</label>
+                <input type="date" name="startdate" placeholder="" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Last Date To Apply</label>
+                <input type="date" name="lastdate" placeholder="" class="form-control">
+            </div>
+            <button class="btn btn-lg btn-info">Submit</button>
+        </form>
+    </div>
+
+    <%- include('./partials/footer') %>
