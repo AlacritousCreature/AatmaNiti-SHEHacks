@@ -33,8 +33,7 @@
                 <img class="navlogo" src="/assets/logo.svg"> AatmaNiti
             </a>
 
-            <button class="navbar-toggler nav-toggle-btn" type="button" data-toggle="collapse" data-target="#navLinks"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler nav-toggle-btn" type="button" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                 </span>
             </button>
@@ -55,12 +54,24 @@
                     <li class="nav-item">
                         <a href="/contact" class="nav-link">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/login" class="nav-link" id="signin">SignIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/user/new" class="nav-link">Register</a>
-                    </li>
+                    <% if(!currentUser){ %>
+                        <li class="nav-item">
+                            <a href="/login" class="nav-link" id="signin">SignIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/user/new" class="nav-link">Register</a>
+                        </li>
+                        <% }else{ %>
+                            <li class="nav-item">
+                                <a href="/user/<%= currentUser._id %>" class="nav-link">Signed In as
+                                <%= currentUser.username %></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/logout" class="nav-link">Logout</a>
+                            </li>
+                            <% } %>
+
+
                 </ul>
             </div>
 
