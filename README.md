@@ -1,5 +1,7 @@
 # AatmaNiti-SHEHacks
 
+![view it here]{https://aatmaniti.herokuapp.com/}
+
 ## To install and view locally
 
 ```bash
