@@ -1,0 +1,92 @@
+<%- include('./partials/header') %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/products.css"></link>
+    <style tyep="text/stylesheets">
+        body {
+            /*background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);*/
+            background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+        }
+    </style>
+
+    <h1 style="padding-top: 5rem;">Showcase your buiness cards and take orders!</h1>
+    <section class="h-100">
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <% services.forEach(function(service){ %>
+                    <div class="col">
+                        <div class="card shadow h-100" style="border: none">
+                            <img src="<%= service.image %>" class="card-img-top" alt="Image Card laceholder">
+                            <div class="card-body d-flex flex-column">
+
+                                <h5 class="card-title mb-3 text-warning">
+                                    <%= service.servicename %>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="5 stars"></label>
+                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="4.5 stars"></label>
+                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="4 stars"></label>
+                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="3.5 stars"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="3 stars"></label>
+                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="2.5 stars"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="2 stars"></label>
+                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="1.5 stars"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="1 star"></label>
+                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="0.5 stars"></label>
+                                    </fieldset>
+                                </h5>
+                                <p class="text-muted mb-1">
+                                    <%= service.servicetype %>
+                                </p>
+                                <p class="card-text flex-grow-1">
+                                    <ul>
+                                        <li>Owner:
+                                            <%= service.owner %>
+                                        </li>
+                                        <li>Place of production:
+                                            <%= service.city %>,
+                                                <%= service.state %>
+                                        </li>
+                                        <li>Contact:
+                                            <%= service.phone %>
+                                        </li>
+                                        <li>Contact:
+                                            <%= service.email %>
+                                        </li>
+                                        <li>rating:
+                                            <span id="random"></span>
+                                        </li>
+                                    </ul>
+                                    <%= service.description %>
+                                </p>
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="btn-group btn-group-sm">
+                                                <div class="btn btn-warning">
+                                                    Details
+                                                </div>
+                                                <div class="btn active btn-warning">
+                                                    Edit
+                                                </div>
+                                                <div class="btn btn-warning">
+                                                    Delete
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex justify-content-end align-items-center">
+                                            <div class="btn btn-warning">
+                                                Rating: 4.3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }); %>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)/2;
+    </script>
+
+    <%- include('./partials/footer') %>

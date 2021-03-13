@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-*, html, body {
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     /* font-family: "Andika New Basic", sans-serif; */
@@ -9,6 +11,7 @@
 h1 {
     color: #58afed;
 }
+
 
 /* ===========header=========== */
 
@@ -44,6 +47,7 @@ h1 {
     width: 100% !important;
 }
 
+
 /* .sticky + .section-content-block {
     padding-top: 10rem;
 } */
@@ -61,7 +65,7 @@ h1 {
     padding: 0rem 2rem;
     box-shadow: 0rem 0.3rem 0.8rem 0.3rem #4b4848;
     font-weight: 500px;
-    height: fit-content; 
+    height: fit-content;
     background-color: #260036;
     transition: 0.2s;
 }
@@ -69,7 +73,7 @@ h1 {
 #mainNavbar .navbar-brand {
     color: #ffffff;
     font-family: "Play", sans-serif;
-    font-weight: 700;
+    /*font-weight: 700;*/
     font-size: 2.5rem;
     margin: 3px 10px 5px 1px;
     padding: 2px 3px 3px 1px;
@@ -78,7 +82,7 @@ h1 {
 #mainNavbar .nav-link {
     font-family: "nunito", sans-serif;
     color: #ffffff;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-size: 1rem;
     margin: 0rem 0rem 0rem 1rem;
     padding: 8px 5px;
@@ -107,7 +111,9 @@ h1 {
     font-weight: 100px;
 }
 
-nav ul li a, nav ul li a:after, nav ul li a:before {
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
     transition: all .2s;
     /* text-transform: lowercase; */
 }
@@ -137,6 +143,7 @@ nav.stroke ul li a:hover:after {
     width: 3rem;
     height: 4rem;
 }
+
 
 /* Here is the code for Responsive header */
 
@@ -242,7 +249,9 @@ nav.stroke ul li a:hover:after {
     }
 }
 
+
 /* ===========header ends here=========== */
+
 
 /* ===========footer=========== */
 
@@ -267,10 +276,13 @@ footer {
     margin-top: 0px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
+
 
 /* Footer left */
 
@@ -284,6 +296,7 @@ footer {
     margin: 0;
 }
 
+
 /* The company logo */
 
 .footer-distributed .footer-left img {
@@ -294,6 +307,7 @@ footer {
     color: #aacce4;
     font-size: 1.2rem;
 }
+
 
 /* Footer links */
 
@@ -315,6 +329,7 @@ footer {
     font-weight: normal;
     margin: 0;
 }
+
 
 /* Footer Center */
 
@@ -359,6 +374,7 @@ footer {
     text-decoration: none;
 }
 
+
 /* Footer Right */
 
 .footer-distributed .footer-right {
@@ -400,12 +416,16 @@ footer {
     margin-bottom: 5px;
 }
 
+
 /* Here is the code for Responsive Footer */
+
 
 /* You can remove below code if you don't want Footer to be responsive */
 
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
@@ -420,5 +440,6 @@ footer {
     width: 100px;
     height: 125px;
 }
+
 
 /* ===========footer=========== */
