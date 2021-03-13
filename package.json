@@ -1,7 +1,8 @@
 {
   "name": "aatmaniti",
   "version": "1.0.0",
-  "description": "",
+  "description": "",,
+  "start": "node app.js",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlacritousCreature/AatmaNiti.git"
+    "url": "git+https://github.com/AlacritousCreature/SHEHacks_Team-073.git"
   },
   "author": "tssr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlacritousCreature/AatmaNiti/issues"
+    "url": "https://github.com/AlacritousCreature/SHEHacks_Team-073/issues"
   },
-  "homepage": "https://github.com/AlacritousCreature/AatmaNiti#readme",
+  "homepage": "https://github.com/AlacritousCreature/SHEHacks_Team-073#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
