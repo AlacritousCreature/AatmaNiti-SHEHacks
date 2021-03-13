@@ -1,6 +1,6 @@
 # AatmaNiti-SHEHacks
 
-![view it here]{https://aatmaniti.herokuapp.com/}
+[AatmaNiti]{https://aatmaniti.herokuapp.com/}
 
 ## To install and view locally
 
