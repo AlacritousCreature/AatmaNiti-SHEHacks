@@ -16,9 +16,11 @@
 
     <!-- Link to Bootstrap-->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!-- Link to font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +30,18 @@
 
     <header style="padding-top:0;margin-top:0;">
         <!--navbar to all-->
-        <nav id="mainNavbar" class=" stroke navbar navbar-expand-md fixed-top navbar-dark">
+        <div id="header-top">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link pt-0 pb-0" href="#">English</a>
+                </li>
+                <li class="nav-item" id="lang2">
+                    <a class="nav-link pt-0 pb-0" href="#">Hindi</a>
+                </li>
+            </ul>
+        </div>
+
+        <nav id="mainNavbar" class="stroke navbar navbar-expand-md sticky-top navbar-dark">
             <a class="navbar-brand">
                 <img class="navlogo" src="/assets/logo.svg"> AatmaNiti
             </a>
@@ -65,5 +78,20 @@
             </div>
 
         </nav>
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("mainNavbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
 
     </header>

@@ -1,27 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-*,
-html,
-body {
+*, html, body {
     margin: 0;
     padding: 0;
-    font-family: "Andika New Basic", sans-serif;
+    /* font-family: "Andika New Basic", sans-serif; */
 }
 
 h1 {
     color: #58afed;
 }
 
-
 /* ===========header=========== */
 
+#header-top {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.83rem;
+    font-weight: bold;
+    /* background-color: rgb(172, 172, 172); */
+}
+
+#header-top {
+    padding: 0.6rem 4rem;
+}
+
+#header-top #lang2 {
+    border-left: 1px solid rgb(173, 171, 171);
+    font-weight: 400;
+}
+
+#header-top a {
+    color: rgb(100, 100, 100);
+}
+
+#header-top .nav-item:hover {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+
+/* .sticky + .section-content-block {
+    padding-top: 10rem;
+} */
+
+@media (max-width: 400px) {
+    #header-top {
+        padding: 0.6rem 1rem;
+    }
+}
+
 #mainNavbar {
+    overflow: hidden;
     padding: 0rem 4rem;
-    box-shadow: 0rem 0rem 0.8rem 0.3rem #4b4848;
+    box-shadow: 0rem 0.3rem 0.8rem 0.3rem #4b4848;
     font-weight: 500px;
     height: fit-content;
     background-color: #000000;
-    /*#bbffdf*/
     transition: 0.2s;
 }
 
@@ -64,9 +101,7 @@ h1 {
     font-weight: 100px;
 }
 
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
+nav ul li a, nav ul li a:after, nav ul li a:before {
     transition: all .2s;
     /* text-transform: lowercase; */
 }
@@ -96,7 +131,6 @@ nav.stroke ul li a:hover:after {
     width: 3rem;
     height: 4rem;
 }
-
 
 /* Here is the code for Responsive header */
 
@@ -171,7 +205,7 @@ nav.stroke ul li a:hover:after {
 }
 
 @media (max-width: 767px) {
-    nav.stroke ul li a:after {
+    #mainNavbar nav.stroke ul li a:after {
         height: 0rem;
     }
     #mainNavbar .nav-link {
@@ -204,28 +238,25 @@ footer {
 }
 
 @media (max-height: 800px) {
-  footer {
-    position: static;
-  }
+    footer {
+        position: static;
+    }
 }
 
 .footer-distributed {
-  background-color: #242729;
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px;
-  padding: 50px 50px 60px 50px;
-  margin-top: 0px;
+    background-color: #242729;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+    margin-top: 0px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
-
 
 /* Footer left */
 
@@ -239,7 +270,6 @@ footer {
     margin: 0;
 }
 
-
 /* The company logo */
 
 .footer-distributed .footer-left img {
@@ -250,7 +280,6 @@ footer {
     color: #aacce4;
     font-size: 1.2rem;
 }
-
 
 /* Footer links */
 
@@ -272,7 +301,6 @@ footer {
     font-weight: normal;
     margin: 0;
 }
-
 
 /* Footer Center */
 
@@ -317,7 +345,6 @@ footer {
     text-decoration: none;
 }
 
-
 /* Footer Right */
 
 .footer-distributed .footer-right {
@@ -359,16 +386,12 @@ footer {
     margin-bottom: 5px;
 }
 
-
 /* Here is the code for Responsive Footer */
-
 
 /* You can remove below code if you don't want Footer to be responsive */
 
 @media (max-width: 880px) {
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
@@ -383,6 +406,5 @@ footer {
     width: 100px;
     height: 125px;
 }
-
 
 /* ===========footer=========== */
