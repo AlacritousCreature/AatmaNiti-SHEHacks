@@ -52,6 +52,9 @@
                         <a href="/products" class="nav-link">Buy and Sell</a>
                     </li>
                     <li class="nav-item">
+                        <a href="/services" class="nav-link">Buisness</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="/contact" class="nav-link">Contact</a>
                     </li>
                     <% if(!currentUser){ %>
@@ -63,18 +66,31 @@
                         </li>
                         <% }else{ %>
                             <li class="nav-item">
-                                <a href="/user/<%= currentUser._id %>" class="nav-link">Signed In as
-                                <%= currentUser.username %></a>
+                                <a href="/user/<%= currentUser._id %>" class="nav-link">
+                                    <%= currentUser.username %>
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a href="/logout" class="nav-link">Logout</a>
                             </li>
                             <% } %>
-
-
                 </ul>
             </div>
 
         </nav>
+
+        <div class="container" style="padding-top:5rem;">
+
+            <% if(error && error.length > 0){ %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+                <% } %>
+                    <% if(success && success.length > 0){ %>
+                        <div class="alert alert-success" role="alert">
+                            <%= success %>
+                        </div>
+                        <% } %>
+        </div>
 
     </header>

@@ -9,7 +9,8 @@ const express = require("express"),
     User = require("./models/user"),
     Job = require("./models/job"),
     Product = require("./models/product");
-    var multiparty = require('multiparty');
+
+var multiparty = require('multiparty');
 const { initialize } = require("passport");
 require("dotenv").config();
 
@@ -52,21 +53,23 @@ const transporter = nodemailer.createTransport({
     port: 587,
     auth: {
         // TURN ON ACCESS TO LOW SECURITY APPS FOR THIS EMAIL.
-      user: 'ENTER YOUR EMAIL ID',
-      pass: 'ENTER YOUR PASSWORD',
+        user: 'IIT2019007@iiita.ac.in',
+        pass: 'Sam@1234',
     },
-  });  
+});
 
 // verify connection configuration
-transporter.verify(function (error, success) {
+transporter.verify(function(error, success) {
     if (error) {
-      console.log(error);
+        console.log(error);
     } else {
-      console.log("Server is ready to take our messages");
+        console.log("Server is ready to take our messages");
     }
-  });  
+});
 app.use(function(req, res, next) {
     res.locals.currentUser = req.user;
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
     next();
 });
 
@@ -99,30 +102,16 @@ app.get("/logout", function(req, res) {
     res.redirect("/");
 });
 
+// middleware for login
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
         return next();
     }
+    req.flash("error", "Please Login first!");
     res.redirect("/login");
 }
 
 // user model==========================================
-
-/*var userSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    address: String,
-    city: String,
-    state: String,
-    blood: String,
-    username: String,
-    password: String,
-    phone: String,
-    email: String,
-    aadhar: String,
-});
-
-var User = mongoose.model("User", userSchema);*/
 
 app.get("/user", (req, res) => {
     User.find({}, (err, allUsers) => {
@@ -143,6 +132,7 @@ app.post("/user/new", (req, res) => {
     var username = req.body.username;
     var password = req.body.password;
     var phone = req.body.phone;
+    var image = req.body.image;
     var email = req.body.email;
     var aadhar = req.body.aadhar;
     var newUser = {
@@ -154,6 +144,7 @@ app.post("/user/new", (req, res) => {
         username: username,
         password: password,
         phone: phone,
+        image: image,
         email: email,
         aadhar: aadhar,
     };
@@ -170,7 +161,7 @@ app.post("/user/new", (req, res) => {
 });
 
 app.get("/user/new", (req, res) => {
-    res.render("register");
+    res.render("register", { page: 'register' });
 });
 
 
@@ -186,22 +177,6 @@ app.get("/user/:id", (req, res) => {
 
 });
 //==================================================
-
-// job model=============================
-/*var JobSchema = new mongoose.Schema({
-    position: String,
-    organisation: String,
-    experience: String,
-    city: String,
-    state: String,
-    info: String,
-    qualification: String,
-    startdate: Date,
-    lastdate: Date,
-});
-
-var Job = mongoose.model("Job", JobSchema);*/
-
 
 app.get("/jobs", (req, res) => {
     Job.find({}, (err, allJobs) => {
@@ -251,19 +226,6 @@ app.get("/jobs/new", isLoggedIn, (req, res) => {
 
 
 // product model===================
-/*var ProductSchema = new mongoose.Schema({
-    productname: String,
-    producttype: String,
-    producer: String,
-    city: String,
-    state: String,
-    phone: String,
-    image: String,
-    price: String,
-    quantity: String,
-});
-
-var Product = mongoose.model("Product", ProductSchema);*/
 
 app.get("/products", (req, res) => {
     Product.find({}, (err, allProducts) => {
@@ -314,33 +276,34 @@ app.post("/send", (req, res) => {
     //1.
     let form = new multiparty.Form();
     let data = {};
-    form.parse(req, function (err, fields) {
-      console.log(fields);
-      Object.keys(fields).forEach(function (property) {
-        data[property] = fields[property].toString();
-      });
-  
-      //2. You can configure the object however you want
-      const mail = {
-        from: data.name,
-        // 
-        to: 'ENTER YOU EMAIL HERE',
-        subject: data.subject,
-        text: `${data.name} <${data.email}> \n${data.message}`,
-      };
-  
-      //3.
-      transporter.sendMail(mail, (err, data) => {
-        if (err) {
-          console.log(err);
-          res.status(500).send("Something went wrong.");
-        } else {
-          res.status(200).send("Email successfully sent to recipient!");
-        }
-      });
+    form.parse(req, function(err, fields) {
+        // console.log(fields);
+        Object.keys(fields).forEach(function(property) {
+            data[property] = fields[property].toString();
+        });
+
+        //2. You can configure the object however you want
+        const mail = {
+            from: data.name,
+            // 
+            to: 'IIT2019007@iiita.ac.in',
+            subject: data.subject,
+            text: `${data.name} <${data.email}> \n${data.message}`,
+        };
+
+        //3.
+        transporter.sendMail(mail, (err, data) => {
+            if (err) {
+                console.log(err);
+                res.status(500).send("Something went wrong.");
+            } else {
+                res.status(200).send("Email successfully sent to recipient!");
+            }
+        });
+        res.render("home");
     });
-  });
-  
+});
+
 //======================================
 
 let port = process.env.PORT || 3000
