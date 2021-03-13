@@ -2,7 +2,6 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 body {
-    /*background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);*/
     background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
@@ -18,7 +17,6 @@ body {
 #banner {
     height: 28em;
 }
-
 
 /****** Style Star Rating Widget *****/
 

@@ -1,9 +1,4 @@
-html{
-    scroll-behavior: smooth;
-}
-
 body {
-    /*background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);*/
     background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
