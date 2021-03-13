@@ -67,6 +67,10 @@ transporter.verify(function (error, success) {
       console.log("Server is ready to take our messages");
     }
   });  
+app.use(function(req, res, next) {
+    res.locals.currentUser = req.user;
+    next();
+});
 
 //===routes====
 app.get("/", (req, res) => {
@@ -96,6 +100,13 @@ app.get("/logout", function(req, res) {
     req.flash("success", "Logged you out!");
     res.redirect("/");
 });
+
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    }
+    res.redirect("/login");
+}
 
 // user model==========================================
 
@@ -204,7 +215,7 @@ app.get("/jobs", (req, res) => {
     });
 });
 
-app.post("/jobs", (req, res) => {
+app.post("/jobs", isLoggedIn, (req, res) => {
     var position = req.body.position;
     var organisation = req.body.organisation;
     var experience = req.body.experience;
@@ -234,7 +245,7 @@ app.post("/jobs", (req, res) => {
     });
 });
 
-app.get("/jobs/new", (req, res) => {
+app.get("/jobs/new", isLoggedIn, (req, res) => {
     res.render("newjob");
 });
 
@@ -266,7 +277,7 @@ app.get("/products", (req, res) => {
     });
 });
 
-app.post("/products", (req, res) => {
+app.post("/products", isLoggedIn, (req, res) => {
     var productname = req.body.productname;
     var producttype = req.body.producttype;
     var producer = req.body.producer;
@@ -297,7 +308,7 @@ app.post("/products", (req, res) => {
     });
 });
 
-app.get("/products/new", (req, res) => {
+app.get("/products/new", isLoggedIn, (req, res) => {
     res.render("newproduct");
 });
 
