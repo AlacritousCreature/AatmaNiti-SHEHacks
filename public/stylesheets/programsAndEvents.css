@@ -9,16 +9,17 @@
         
         /* Style tab links */
         .tablink {
+          padding-left: 20%;
           margin-left: 10px;
           background-color: rgb(255, 255, 255);
           color: rgb(0, 0, 0);
           float: left;
           border: none;
           cursor: pointer;
-          padding: 14px 16px;
+          padding: 14px 12px;
           font-size: 17px;
           font-weight: 600;
-          width: 49%;
+          width: 23%;
         }
         
         /* .tablink:hover {
