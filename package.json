@@ -1,7 +1,7 @@
 {
   "name": "aatmaniti",
   "version": "1.0.0",
-  "description": "",,
+  "description": "",
   "start": "node app.js",
   "main": "app.js",
   "scripts": {
