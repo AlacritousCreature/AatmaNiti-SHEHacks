@@ -1,5 +1,6 @@
 const express = require("express"),
     mongoose = require("mongoose"),
+    nodemailer = require("nodemailer"),
     flash = require("connect-flash"),
     passport = require("passport"),
     LocalStrategy = require("passport-local"),
@@ -7,7 +8,10 @@ const express = require("express"),
     methodOverride = require("method-override"),
     User = require("./models/user"),
     Job = require("./models/job"),
-    Product = require("./models/product")
+    Product = require("./models/product");
+    var multiparty = require('multiparty');
+const { initialize } = require("passport");
+require("dotenv").config();
 
 const app = express();
 require('dotenv').config();
@@ -41,6 +45,28 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+//Mail configuration
+
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    port: 587,
+    MAIL: 'iit2019171@iiita.ac.in' ,
+    PASS: 'Rishika8910@',
+    auth: {
+        // TURN ON ACCESS TO LOW SECURITY APPS FOR THIS EMAIL.
+      user: 'ENTER YOUR EMAIL ID',
+      pass: 'ENTER YOUR PASSWORD',
+    },
+  });  
+
+// verify connection configuration
+transporter.verify(function (error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Server is ready to take our messages");
+    }
+  });  
 
 //===routes====
 app.get("/", (req, res) => {
@@ -274,6 +300,38 @@ app.post("/products", (req, res) => {
 app.get("/products/new", (req, res) => {
     res.render("newproduct");
 });
+
+app.post("/send", (req, res) => {
+    //1.
+    let form = new multiparty.Form();
+    let data = {};
+    form.parse(req, function (err, fields) {
+      console.log(fields);
+      Object.keys(fields).forEach(function (property) {
+        data[property] = fields[property].toString();
+      });
+  
+      //2. You can configure the object however you want
+      const mail = {
+        from: data.name,
+        // 
+        to: 'ENTER YOU EMAIL HERE',
+        subject: data.subject,
+        text: `${data.name} <${data.email}> \n${data.message}`,
+      };
+  
+      //3.
+      transporter.sendMail(mail, (err, data) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send("Something went wrong.");
+        } else {
+          res.status(200).send("Email successfully sent to recipient!");
+        }
+      });
+    });
+  });
+  
 //======================================
 
 let port = process.env.PORT || 3000
