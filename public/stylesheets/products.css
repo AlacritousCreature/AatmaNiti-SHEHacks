@@ -1,5 +1,23 @@
+
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+body {
+    /*background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);*/
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #281436 !important;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #8E4EBC !important;
+}
+
+#banner {
+    height: 28em;
+}
 
 
 /****** Style Star Rating Widget *****/

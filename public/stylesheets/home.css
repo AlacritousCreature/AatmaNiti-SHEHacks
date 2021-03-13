@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bad Script');
 body {
-    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    background-image: linear-gradient(to top, #cd9cf2 0%, #d6a8fa 100%);
     /*background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);*/
 }
 
@@ -269,8 +269,13 @@ body {
 }
 
 #vision {
-    background-color: darkgray;
+    background-color: rgb(248, 177, 227);
+    font-family:Arial, Helvetica, sans-serif;
     padding: 5rem 1rem;
+}
+
+#vision h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 #vision p {
