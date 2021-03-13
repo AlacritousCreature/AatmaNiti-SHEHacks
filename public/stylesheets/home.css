@@ -9,9 +9,11 @@ body {
     margin-bottom: 5rem;
 }
 
+
 /* .sticky + .section-content-block {
     padding-top: 10rem;
 } */
+
 
 /*-----------------------carousels---------------------------*/
 
@@ -55,6 +57,7 @@ body {
     font-style: italic;
     color: #e2e2e2;
 }
+
 
 /*-------------------------description-----------------------------*/
 
@@ -101,6 +104,7 @@ body {
     }
 }
 
+
 /*-------------------------user-button-----------------------------*/
 
 @media (max-width:800px) {
@@ -108,6 +112,7 @@ body {
         font-size: 1rem;
     }
 }
+
 
 /*-------------------------testimonials-----------------------------*/
 
@@ -164,6 +169,7 @@ body {
     font-weight: 600;
 }
 
+
 /*------here is code for responsive testimonials------*/
 
 @media (max-width: 992px) {
@@ -206,6 +212,7 @@ body {
         font-size: 0.78rem;
     }
 }
+
 
 /*------------blockquote at the end of homepage-----------*/
 
