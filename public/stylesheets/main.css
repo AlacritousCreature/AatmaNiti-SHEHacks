@@ -57,14 +57,16 @@ h1 {
     padding: 0rem 4rem;
     box-shadow: 0rem 0.3rem 0.8rem 0.3rem #4b4848;
     font-weight: 500px;
-    height: fit-content;
-    background-color: #000000;
+    height: fit-content; 
+    background-color: #260036;
+
     transition: 0.2s;
 }
 
 #mainNavbar .navbar-brand {
-    color: rgb(252, 216, 252);
+    color: #ffffff;
     font-family: "Play", sans-serif;
+    font-weight: 700;
     font-size: 2.5rem;
     margin: 3px 10px 5px 1px;
     padding: 2px 3px 3px 1px;
@@ -72,7 +74,8 @@ h1 {
 
 #mainNavbar .nav-link {
     font-family: "nunito", sans-serif;
-    color: #a7a7a7;
+    color: #ffffff;
+    font-weight: 600;
     font-size: 1rem;
     margin: 0rem 0rem 0rem 2rem;
     padding: 8px 5px;
