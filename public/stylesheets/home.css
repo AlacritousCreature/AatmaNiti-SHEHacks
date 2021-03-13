@@ -5,7 +5,7 @@ body {
 }
 
 .section-content-block {
-    margin-top: 0rem;   
+    margin-top: 0rem;
     margin-bottom: 5rem;
 }
 
@@ -59,46 +59,46 @@ body {
 /*-------------------------description-----------------------------*/
 
 .section-content-block div #illustration img {
-  height: 500px;
-  width: 500px;
+    height: 500px;
+    width: 500px;
 }
 
 .section-content-block #descriptive .contents {
-  text-align: left;
+    text-align: left;
 }
 
 @media (max-width: 992px) {
-  .section-content-block #descriptive .contents {
-    text-align: center;
-  }
+    .section-content-block #descriptive .contents {
+        text-align: center;
+    }
 }
 
 @media (max-width: 525px) {
-  .section-content-block #descriptive .contents h1{
-    font-size: 1.5rem;
-  }
-  .section-content-block #descriptive .contents h5{
-    font-size: 1rem;
-  }
-  .section-content-block #descriptive .contents div .btn{
-    font-size: 0.8rem;
-  }
-  .section-content-block div #illustration img {
-    height: 300px;
-    width: 300px;
-  }
+    .section-content-block #descriptive .contents h1 {
+        font-size: 1.5rem;
+    }
+    .section-content-block #descriptive .contents h5 {
+        font-size: 1rem;
+    }
+    .section-content-block #descriptive .contents div .btn {
+        font-size: 0.8rem;
+    }
+    .section-content-block div #illustration img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 325px) {
-  .section-content-block #descriptive .contents h1{
-    font-size: 1rem;
-  }
-  .section-content-block #descriptive .contents h5{
-    font-size: 0.8rem;
-  }
-  .section-content-block #descriptive .contents div .btn{
-    font-size: 0.8rem;
-  }
+    .section-content-block #descriptive .contents h1 {
+        font-size: 1rem;
+    }
+    .section-content-block #descriptive .contents h5 {
+        font-size: 0.8rem;
+    }
+    .section-content-block #descriptive .contents div .btn {
+        font-size: 0.8rem;
+    }
 }
 
 /*-------------------------user-button-----------------------------*/
@@ -164,7 +164,6 @@ body {
     font-weight: 600;
 }
 
-
 /*------here is code for responsive testimonials------*/
 
 @media (max-width: 992px) {
@@ -208,7 +207,6 @@ body {
     }
 }
 
-
 /*------------blockquote at the end of homepage-----------*/
 
 #quotation p {
@@ -243,5 +241,37 @@ body {
     }
     #quotation p span {
         font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 600px) {
+    #shadow-frame {
+        height: object-fit;
+        width: object-fit;
+    }
+    #edits {
+        margin: 0rem;
+    }
+}
+
+@media(max-width: 400px) {
+    #shadow-frame {
+        height: 200px;
+        width: object-fit;
+    }
+}
+
+#vision {
+    background-color: darkgray;
+    padding: 5rem 1rem;
+}
+
+#vision p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    #vision p {
+        font-size: 1rem;
     }
 }

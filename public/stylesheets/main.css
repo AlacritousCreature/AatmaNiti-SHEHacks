@@ -16,7 +16,7 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.83rem;
     font-weight: bold;
-    /* background-color: rgb(172, 172, 172); */
+    background-color: rgb(245, 243, 222);
 }
 
 #header-top {
@@ -236,7 +236,7 @@ nav.stroke ul li a:hover:after {
 /* ===========footer=========== */
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
 }
 
