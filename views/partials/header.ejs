@@ -28,7 +28,18 @@
 
     <header style="padding-top:0;margin-top:0;">
         <!--navbar to all-->
-        <nav id="mainNavbar" class=" stroke navbar navbar-expand-md fixed-top navbar-dark">
+        <div id="header-top">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link pt-0 pb-0" href="#">English</a>
+                </li>
+                <li class="nav-item" id="lang2">
+                    <a class="nav-link pt-0 pb-0" href="#">Hindi</a>
+                </li>
+            </ul>
+        </div>
+
+        <nav id="mainNavbar" class="stroke navbar navbar-expand-md sticky-top navbar-dark">
             <a class="navbar-brand">
                 <img class="navlogo" src="/assets/logo.svg"> AatmaNiti
             </a>
@@ -78,7 +89,6 @@
             </div>
 
         </nav>
-
         <div class="container" style="padding-top:5rem;">
 
             <% if(error && error.length > 0){ %>
@@ -92,5 +102,23 @@
                         </div>
                         <% } %>
         </div>
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var navbar = document.getElementById("mainNavbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
 
     </header>

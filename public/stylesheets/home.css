@@ -5,29 +5,33 @@ body {
 }
 
 .section-content-block {
-    /* margin-top: auto;    */
+    margin-top: 0rem;   
     margin-bottom: 5rem;
 }
 
+/* .sticky + .section-content-block {
+    padding-top: 10rem;
+} */
 
 /*-----------------------carousels---------------------------*/
 
 .carousel-inner .carousel-item img {
-    height: 45em;
-    object-fit: cover;
+    height: 40em;
+    object-fit: fill !important;
 }
 
 .carousel-caption {
     position: absolute;
     font-family: 'Bad Script';
+    font-weight: 1000;
     right: 15%;
     bottom: 1.6em;
     left: 15%;
     z-index: 10;
     padding-top: 1em;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
     font-weight: 200;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 2em;
     text-align: center;
 }
@@ -49,7 +53,7 @@ body {
     font-weight: bolder;
     padding: 1em 0em 2em 5em;
     font-style: italic;
-    color: #9b9486;
+    color: #e2e2e2;
 }
 
 /*-------------------------description-----------------------------*/
@@ -95,6 +99,14 @@ body {
   .section-content-block #descriptive .contents div .btn{
     font-size: 0.8rem;
   }
+}
+
+/*-------------------------user-button-----------------------------*/
+
+@media (max-width:800px) {
+    .section-content-block .sbtn {
+        font-size: 1rem;
+    }
 }
 
 /*-------------------------testimonials-----------------------------*/
