@@ -50,8 +50,6 @@ passport.deserializeUser(User.deserializeUser());
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     port: 587,
-    MAIL: 'iit2019171@iiita.ac.in' ,
-    PASS: 'Rishika8910@',
     auth: {
         // TURN ON ACCESS TO LOW SECURITY APPS FOR THIS EMAIL.
       user: 'ENTER YOUR EMAIL ID',
