@@ -11,6 +11,7 @@ var UserSchema = new Schema({
     username: String,
     password: String,
     phone: String,
+    image: String,
     email: String,
     aadhar: String,
 });

@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }*/
 
-html {
-    background-color: #ecf9ff;
-}
-
 body {
     color: #272727;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
     /*padding: 1rem;*/
+    /*background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);*/
+    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
 }
 
 .main {
