@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Bad Script');
 body {
-    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    background-image: linear-gradient(to top, #cd9cf2 0%, #d6a8fa 100%);
     /*background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);*/
 }
 
 .section-content-block {
-    margin-top: 0rem;   
+    margin-top: 0rem;
     margin-bottom: 5rem;
 }
+
 
 /* .sticky + .section-content-block {
     padding-top: 10rem;
 } */
+
 
 /*-----------------------carousels---------------------------*/
 
@@ -56,50 +58,52 @@ body {
     color: #e2e2e2;
 }
 
+
 /*-------------------------description-----------------------------*/
 
 .section-content-block div #illustration img {
-  height: 500px;
-  width: 500px;
+    height: 500px;
+    width: 500px;
 }
 
 .section-content-block #descriptive .contents {
-  text-align: left;
+    text-align: left;
 }
 
 @media (max-width: 992px) {
-  .section-content-block #descriptive .contents {
-    text-align: center;
-  }
+    .section-content-block #descriptive .contents {
+        text-align: center;
+    }
 }
 
 @media (max-width: 525px) {
-  .section-content-block #descriptive .contents h1{
-    font-size: 1.5rem;
-  }
-  .section-content-block #descriptive .contents h5{
-    font-size: 1rem;
-  }
-  .section-content-block #descriptive .contents div .btn{
-    font-size: 0.8rem;
-  }
-  .section-content-block div #illustration img {
-    height: 300px;
-    width: 300px;
-  }
+    .section-content-block #descriptive .contents h1 {
+        font-size: 1.5rem;
+    }
+    .section-content-block #descriptive .contents h5 {
+        font-size: 1rem;
+    }
+    .section-content-block #descriptive .contents div .btn {
+        font-size: 0.8rem;
+    }
+    .section-content-block div #illustration img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 325px) {
-  .section-content-block #descriptive .contents h1{
-    font-size: 1rem;
-  }
-  .section-content-block #descriptive .contents h5{
-    font-size: 0.8rem;
-  }
-  .section-content-block #descriptive .contents div .btn{
-    font-size: 0.8rem;
-  }
+    .section-content-block #descriptive .contents h1 {
+        font-size: 1rem;
+    }
+    .section-content-block #descriptive .contents h5 {
+        font-size: 0.8rem;
+    }
+    .section-content-block #descriptive .contents div .btn {
+        font-size: 0.8rem;
+    }
 }
+
 
 /*-------------------------user-button-----------------------------*/
 
@@ -108,6 +112,7 @@ body {
         font-size: 1rem;
     }
 }
+
 
 /*-------------------------testimonials-----------------------------*/
 
@@ -243,5 +248,42 @@ body {
     }
     #quotation p span {
         font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 600px) {
+    #shadow-frame {
+        height: object-fit;
+        width: object-fit;
+    }
+    #edits {
+        margin: 0rem;
+    }
+}
+
+@media(max-width: 400px) {
+    #shadow-frame {
+        height: 200px;
+        width: object-fit;
+    }
+}
+
+#vision {
+    background-color: rgb(248, 177, 227);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5rem 1rem;
+}
+
+#vision h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#vision p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    #vision p {
+        font-size: 1rem;
     }
 }
