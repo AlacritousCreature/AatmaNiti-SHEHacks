@@ -3,9 +3,9 @@ AatmaNiti is a prototype which should be adopted by a NGO or Govt of Indian, for
 Making them financially self sufficeint will make them, confident, improve their lives and even will reduce domesic violence, women inequality in house, etc.
 
 
-###Features
+### Features
 
-![alt-text](https://github.com/AlacritousCreature/SHEHacks_Team-073/home-1.png)
+![alt-text](https://github.com/AlacritousCreature/SHEHacks_Team-073/blob/main/home-1.png)
 
 * Its a fully working website where user can register/signin himself, and can find/ place a job, buy/sell products, display their buiness cards,get orders, recieve feeback on  mail!
 
@@ -26,7 +26,7 @@ visit it here-
 
 ## Actors in the system - ADMIN and User
 
-* 
+ User can do all things above mentioned and ADMIN can manage users, products, jobs displayed and business cards there!
 
 ## Tech Stack
 
