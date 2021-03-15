@@ -61,7 +61,7 @@ $ node app.js
   - `MONGODB_URI = <your_connection_string>`
     To view in your brower navigate to `http://localhost:3000` on your browser
 
-## Contributors
+## Team Members
 
 ##### Taniya
 
