@@ -21,6 +21,10 @@ Our project Idea focuses to make Indian women's, both rural and urban one's self
 visit it here-
 [AatmaNiti](https://aatmaniti.herokuapp.com/)
 
+Video demo of the project is [here]( https://www.youtube.com/watch?v=gIH89xIsYQg)
+
+View the Presentation slides [here](https://docs.google.com/presentation/d/1qVY_nJOMUykOPDrhpVwPA6btTfJkFD1FfU70oO95xmE/edit?usp=sharing)
+
 ### More power to women!
 
 
