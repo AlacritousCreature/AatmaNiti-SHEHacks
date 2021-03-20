@@ -1,5 +1,5 @@
 # AatmaNiti-SHEHacks'21
-AatmaNiti is a prototype which should be adopted by a NGO or Govt of Indian, for empowering women in the true sense. 
+AatmaNiti is a prototype which should be adopted by a NGO or Govt of India, for empowering women in the true sense. 
 Making them financially self sufficeint will make them, confident, improve their lives and even will reduce domesic violence, women inequality in house, etc.
 
 
