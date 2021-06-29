@@ -3,20 +3,34 @@ AatmaNiti is a prototype which should be adopted by a NGO or Govt of India, for 
 Making them financially self sufficeint will make them, confident, improve their lives and even will reduce domesic violence, women inequality in house, etc.
 
 
-### Features
+## Features
 
 ![alt-text](https://github.com/AlacritousCreature/SHEHacks_Team-073/blob/main/home-1.png)
 
 * Its a fully working website where user can register/signin himself, and can find/ place a job, buy/sell products, display their buiness cards,get orders, recieve feeback on  mail!
 
-* AtmaNiti is a Platform where womens can come and choose any plan to land themseleves fro being financially independent.
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/1.jpeg)
+
+* AtmaNiti is a Platform where womens can come and choose any plan to land themseleves for being financially independent.
 Our project Idea focuses to make Indian women's, both rural and urban one's self sufficient-Swawlambi and for this there is a open platform Aatmaniti(means my plan)  where they got many options to show their skills, sell their home made products, showcase their home business like making cakes and cookies, makeing wollen cloths, handicrafts, food products and what not stuffs!
 
-* There is also Rating system in products section, and also in business section which, whic will help other customers to know which are good products.
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/5.jpeg)
+
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/4.jpeg)
+
+* There is also Rating system in products section, and also in business section, which will help other customers to know which are good products.
+
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/3.jpeg)
 
 * Also their is a job portal where they can search for jobs in their location, that can be of any sort like of receiptionist, house maid, house keeping, any professional job, tailoring under any shop or group and many more options there.......
 
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/2.jpeg)
+
 * There is an another section where small Gruha Udyog run by females in all over India, or other female communities can post their business cards and hence can make many connections there!.....in all its a place where a female whether literate or not, skilled or unskilled can find some sort of work, and acquaint herself financially!
+
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/7.jpeg)
+
+![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/6.jpeg)
 
 visit it here-
 [AatmaNiti](https://aatmaniti.herokuapp.com/)
