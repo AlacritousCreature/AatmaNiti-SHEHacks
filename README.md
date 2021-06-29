@@ -1,9 +1,9 @@
-# AatmaNiti-SHEHacks'21
+# AatmaNiti-SHEHacks'21 :female_sign::walking_woman:
 AatmaNiti is a prototype which should be adopted by a NGO or Govt of India, for empowering women in the true sense. 
 Making them financially self sufficeint will make them, confident, improve their lives and even will reduce domesic violence, women inequality in house, etc.
 
 
-## Features
+## Features:star2:
 
 ![alt-text](https://github.com/AlacritousCreature/SHEHacks_Team-073/blob/main/home-1.png)
 
@@ -33,20 +33,20 @@ Our project Idea focuses to make Indian women's, both rural and urban one's self
 ![alt-text](https://github.com/AlacritousCreature/AatmaNiti-SHEHacks_Team-073/blob/main/site_pictures/6.jpeg)
 
 visit it here-
-[AatmaNiti](https://aatmaniti.herokuapp.com/)
+[AatmaNiti](https://aatmaniti.herokuapp.com/) :rocket::rocket:
 
 Video demo of the project is [here]( https://www.youtube.com/watch?v=gIH89xIsYQg)
 
 View the Presentation slides [here](https://docs.google.com/presentation/d/1qVY_nJOMUykOPDrhpVwPA6btTfJkFD1FfU70oO95xmE/edit?usp=sharing)
 
-### More power to women!
+### More power to women! :money_with_wings::confetti_ball:
 
 
 ## Actors in the system - ADMIN and User
 
  User can do all things above mentioned and ADMIN can manage users, products, jobs displayed and business cards there!
 
-## Tech Stack
+## Tech Stack :zap::zap:
 
 | FRONTEND      | BACKEND       |
 | ------------- | ------------- |
@@ -56,7 +56,7 @@ View the Presentation slides [here](https://docs.google.com/presentation/d/1qVY_
 | Tailwind CSS  |MongoDB for Database|
 | JavaScript    |  |
 
-## To install and view locally
+## To install and view locally :arrow_down:
 
 ```bash
 $ git clone https://github.com/AlacritousCreature/SHEHacks_Team-073.git
@@ -65,7 +65,7 @@ $ npm install
 $ node app.js
 ```
 
-## For adding mongodb
+## For adding mongodb :arrow_down:
 
 - You have to use use mongodb Atlas for cloud storage of your data
   - To do that, first create a mongodb atlas account
@@ -75,7 +75,7 @@ $ node app.js
   - `MONGODB_URI = <your_connection_string>`
     To view in your brower navigate to `http://localhost:3000` on your browser
 
-## Team Members
+## Team Members :eyes:
 
 <table>
 	<tr>
@@ -94,3 +94,8 @@ $ node app.js
 ##### Sampada
 
 ##### Rishika
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+## Thank you for visiting our Repository :smile:
+---------------------------------------------------------------------------------------------------------------------------------------------------
